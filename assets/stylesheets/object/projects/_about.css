@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+.p-about__sentence {
+  margin: 30px 0;
+}
+
+.p-about__frame {
+  column-gap: 2%;
+  display: grid;
+  grid-template-columns:
+    1fr 1fr 1fr 1fr;
+  grid-template-rows:
+    350px 350px 350px;
+  row-gap: 10px;
+}
+
+.p-about__frame__baby,
+.p-about__frame__cafe,
+.p-about__frame__Beer,
+.p-about__frame__alchol,
+.p-about__frame__outdoor,
+.p-about__frame__rainbow,
+.p-about__frame__friends,
+.p-about__frame__wings,
+.p-about__frame__yoga,
+.p-about__frame__sunset,
+.p-about__frame__Beverage,
+.p-about__frame__icecream {
+  border-radius: 20px;
+  height: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  width: 100%;
+}
+
+@media (max-width: 796px) {
+
+  .p-about__frame {
+    column-gap: 30px;
+    grid-template-rows:
+      270px 270px 270px;
+    row-gap: 30px;
+  }
+
+}
+
+@media (max-width: 795px) {
+
+  .p-about__frame {
+    grid-template-columns: 1fr;
+    grid-template-rows:
+    repeat(12, 270px);
+    row-gap: 20px;
+  }
+
+}
